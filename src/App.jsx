@@ -7,12 +7,13 @@ import './App.css'
 function App() {
   const [messages, setMessages] = useState([])
   const [isTyping, setIsTyping] = useState(false)
+  const [isMute, setIsMute] = useState(true)
 
   return (
     <div className='App'>
       <Header />
-      <ChatWindow setMessages={setMessages} messages={messages} isTyping={isTyping} />
-      <ComposeMsg setMessages={setMessages} messages={messages} setIsTyping={setIsTyping} />
+      <ChatWindow setMessages={setMessages} messages={messages} isTyping={isTyping} setIsTyping={setIsTyping} />
+      <ComposeMsg setMessages={setMessages} messages={messages} setIsTyping={setIsTyping} setIsMute={setIsMute} isMute={isMute} />
     </div>
   )
 }

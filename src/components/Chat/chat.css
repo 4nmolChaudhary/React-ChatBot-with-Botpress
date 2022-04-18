@@ -34,6 +34,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 8px;
 }
 .compose-div input {
   width: 83%;
@@ -54,12 +55,19 @@
   border: none;
   width: 11%;
   justify-content: space-evenly;
-  color: #fff;
+  color: #363636;
   background: #57e8a8;
   cursor: pointer;
 }
 .compose-div button svg {
   width: 20px;
+}
+.compose-div button svg {
+  fill: #363636;
+}
+.compose-div .icon-button {
+  padding: 10px 12px;
+  width: auto;
 }
 .typing {
   align-items: center;
